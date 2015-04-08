@@ -46,8 +46,20 @@ create a movie file.
 
 
 ###3. Mini-abstract and relevance of [FFT]:
+We need to be able to decode the binary data from the wave audio file into an array. Then,
+we need to be able to process many samples so there will be lots of fourier transform animations.
+In order to initialize a single png image before the iteration from ```range(0, totalFFTs)```,
+where totalFFTs is the total amount of transforms. The x-axis can represent each pitch or octave
+in the audio and the y-axis represents the amplitude. We will worry about the band widths and the
+frequency downgrades to its proper indicies. Here is how I implemented the decoding of the binary
+data and all of the sample information.
 
-
+```python
+sampleData = struct.unpack('%dh' % dataSize, sampleData)
+framesPerSec = 24
+fourierWidth = 1.0 / framesPerSec
+fourierWidthIndex = fourierWidth * float(sampleRate) #sampleRate = wav_file.getframerate()
+```
 
 *This answers question 3*
  
