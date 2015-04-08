@@ -9,8 +9,9 @@ We want to be able to visualize the attributes of an audio file in real-time.
    this module for the future?
 
 # Resources
-[SpecAnim]
-[FFT Audio]
+1. [FFT Realtime]
+2. [SpecAnim]
+3. [FFT]
 
 
 ### 1. Mini-abstract and relevance of [FFT Realtime]:
