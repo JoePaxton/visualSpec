@@ -52,6 +52,19 @@ create a movie file.
 *This answers question 3*
  
 
+#Dependencies:
+```python
+import wave
+import struct
+import numpy as np
+from math import sqrt
+import sys
+matplotlib.use('Agg')
+from matplotlib import pylab
+import matplotlib.pyplot as plt
+```
+
+
 [SpecAnim]: http://classicalconvert.com/2008/04/how-to-visualize-music-using-animated-spectrograms-with-open-source-everything/
 [FFT Realtime]: http://www.swharden.com/blog/2013-05-09-realtime-fft-audio-visualization-with-python/
 [FFT]: https://jakevdp.github.io/blog/2013/08/28/understanding-the-fft/
