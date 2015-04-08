@@ -7,23 +7,17 @@ We want to be able to visualize the attributes of an audio file in real-time.
    attributes displayed real time?
 
 # Resources
-[VisualizeSpectrogram]
 [Realtime FFT]
 [FFT Audio]
 
-### 1. Mini-abstract and relevance of [VisualizeSpectrogram]: 
 
-
-
-*This answers question 1*
-
-### 2. Mini-abstract and relevance of [Realtime FFT]:
+### 1. Mini-abstract and relevance of [Realtime FFT]:
 
 
 
 *This answers question 2*
 
-### 3. Mini-abstract and relevance of [FFT Audio]:
+### 2. Mini-abstract and relevance of [FFT Audio]:
 
 .
 
