@@ -9,11 +9,11 @@ We want to be able to visualize the attributes of an audio file in real-time.
    this module for the future?
 
 # Resources
-[Realtime FFT]
+[SpecAnim]
 [FFT Audio]
 
 
-### 1. Mini-abstract and relevance of [Realtime FFT]:
+### 1. Mini-abstract and relevance of [FFT Realtime]:
 If we use the ```wave``` module then we are able to open a wave file and retreive
 its information. We can obtain the data size, sample rate, sample width, and the
 duration of the track. In addition, we need to read in the sample data after the
@@ -32,7 +32,7 @@ wave_file.close()
 
 *This answers question 1*
 
-### 2. Mini-abstract and relevance of [FFT Audio]:
+### 2. Mini-abstract and relevance of [SpecAnim]:
 We need to be able to calculate and display the various pieces of information. I want
 to be able to plot the Fast Fourier Transform data for a WAV file into multiple png images.
 The output of hundreds to thousands of png images will be converted using ```ffmpeg``` into 
@@ -44,13 +44,13 @@ create a movie file.
 *This answers question 2*
 
 
-###3. Mini-abstract and relevance of []:
+###3. Mini-abstract and relevance of [FFT]:
 
 
 
 *This answers question 3*
  
 
-[Realtime FFT]: http://www.swharden.com/blog/2010-03-05-realtime-fft-graph-of-audio-wav-file-or-microphone-input-with-python-scipy-and-wckgraph/
-[FFT Audio]: http://www.swharden.com/blog/2013-05-09-realtime-fft-audio-visualization-with-python/
-[]:
+[SpecAnim]: http://classicalconvert.com/2008/04/how-to-visualize-music-using-animated-spectrograms-with-open-source-everything/
+[FFT Realtime]: http://www.swharden.com/blog/2013-05-09-realtime-fft-audio-visualization-with-python/
+[FFT]: https://jakevdp.github.io/blog/2013/08/28/understanding-the-fft/
