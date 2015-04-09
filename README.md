@@ -26,8 +26,8 @@ import wave #import echonest.remix.audio as audio
 wave_file = wave.open(filename, 'r') #audio = audio.LocalAudioFile("song.wav")
 dataSize = wave_file.getnframes() #dataSize = audio.getsample
 sampleRate = wave_file.getframerate() #sampleRate = audio.sampleRate
-sampleWidth = wave_file.getsampwidth() 
-duration = dataSize / float(sampleRate)
+sampleWidth = wave_file.getsampwidth() #for loop to go throuogh dataSize
+duration = dataSize / float(sampleRate) #duration = audio.duration
 sampleData = wave_file.readframes(dataSize)
 wave_file.close()
 ```
@@ -57,10 +57,10 @@ widths and the frequency downgrades to its proper indices later, if needed. Here
 decoding of binary data and all of the sample data. 
 
 ```python
-sampleData = struct.unpack('%dh' % dataSize, sampleData)
+sampleData = struct.unpack('%dh' % dataSize, sampleData) 
 framesPerSec = 24
 fourierWidth = 1.0 / framesPerSec
-fourierWidthIndex = fourierWidth * float(sampleRate) #sampleRate = wav_file.getframerate()
+fourierWidthIndex = fourierWidth * float(sampleRate)
 ```
 
 *This answers question 3*
