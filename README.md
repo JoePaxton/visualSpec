@@ -9,10 +9,9 @@ We want to be able to visualize the attributes of an audio file in real-time.
    this module for the future?
 
 # Resources
-1. [FFT Realtime]
+1. [wav data]
 2. [SpecAnim]
-3. [FFT]
-4. [struct] 
+3. [struct]
 
 ### 1. Mini-abstract and relevance of [wav data]:
 If we use the Python ```wave``` module, then we are able to open a wave file and retrieve
