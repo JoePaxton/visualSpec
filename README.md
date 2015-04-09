@@ -18,7 +18,9 @@ We want to be able to visualize the attributes of an audio file in real-time.
 If we use the Python ```wave``` module, then we are able to open a wave file and retrieve
 its information. We can obtain the data size, sample rate, sample width, and the
 duration of the track. In addition, we need to read in the sample data after the
-retrieval of the wave file's information.
+retrieval of the wave file's information. The ```wave_file``` should only have one channel
+so for now we do not have to keep track of the ```getnchannels()``` function, since it is
+mono.
 
 ```python
 import wave
@@ -27,7 +29,7 @@ dataSize = wave_file.getnframes()
 sampleRate = wave_file.getframerate()
 sampleWidth = wave_file.getsampwidth()
 duration = dataSize / float(sampleRate)
-sampleData = wave_file.readframe(dataSize)
+sampleData = wave_file.readframes(dataSize)
 wave_file.close()
 ```
 
