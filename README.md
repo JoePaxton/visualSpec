@@ -18,8 +18,7 @@ If we use the Python ```wave``` module, then we are able to open a wave file and
 its information. We can obtain the data size, sample rate, sample width, and the
 duration of the track. In addition, we need to read in the sample data after the
 retrieval of the wave file's information. The ```wave_file``` should only have one channel
-so for now we do not have to keep track of the ```getnchannels()``` function, since it is
-mono.
+so for now we do not have to keep track of the channels, since it is already mono.
 
 ```python
 import wave #import echonest.remix.audio as audio
