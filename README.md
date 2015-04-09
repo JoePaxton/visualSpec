@@ -14,7 +14,7 @@ We want to be able to visualize the attributes of an audio file in real-time.
 3. [FFT]
 4. [struct] 
 
-### 1. Mini-abstract and relevance of [FFT Realtime]:
+### 1. Mini-abstract and relevance of [wav data]:
 If we use the Python ```wave``` module, then we are able to open a wave file and retrieve
 its information. We can obtain the data size, sample rate, sample width, and the
 duration of the track. In addition, we need to read in the sample data after the
@@ -46,7 +46,7 @@ handling audio visual files in order to create the movie file).
 
 *This answers question 2*
 
-###3. Mini-abstract and relevance of [FFT]:
+###3. Mini-abstract and relevance of [struct]:
 We need to be able to decode the binary data from the wave audio file into an array. Then,
 we need to be able to process many samples so there will be lots of fourier transform animations.
 In order to initialize a single png image before the iteration from ```range(0, totalFFTs)```,
@@ -64,7 +64,6 @@ fourierWidthIndex = fourierWidth * float(sampleRate) #sampleRate = wav_file.getf
 
 *This answers question 3*
 
+[wav data]: http://stackoverflow.com/questions/2226853/interpreting-wav-data 
 [SpecAnim]: http://classicalconvert.com/2008/04/how-to-visualize-music-using-animated-spectrograms-with-open-source-everything/
-[FFT Realtime]: http://www.swharden.com/blog/2013-05-09-realtime-fft-audio-visualization-with-python/
-[FFT]: https://jakevdp.github.io/blog/2013/08/28/understanding-the-fft/
 [struct]: https://docs.python.org/2/library/struct.html 
