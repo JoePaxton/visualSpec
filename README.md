@@ -48,13 +48,13 @@ handling audio visual files in order to create the movie file).
 *This answers question 2*
 
 ###3. Mini-abstract and relevance of [struct]:
-We need to be able to decode the binary data from the wave audio file into an array. Then,
+We need to be able to ```unpack()``` the binary data from the wave audio file into an array. Then,
 we need to be able to process many samples so there will be lots of fourier transform animations.
-In order to initialize a single png image before the iteration from ```range(0, totalFFTs)```,
-where ```totalFFTs``` is the total amount of transforms. The x-axis will have colored bars representing
-each pitch or octave in the audio and the y-axis represents the amplitude. We will worry about the band 
-widths and the frequency downgrades to its proper indices. Here is how I implemented the decoding of the 
-binary data and all of the sample information.
+We need to initialize a single png image with the wav data before the iteration from ```range(0, totalFFTs)```,
+where ```totalFFTs``` is the total amount of transforms. The x-axis (0,12) will have colored bars representing
+each pitch or octave in the wav file and the y-axis represents the amplitude. We will worry about the band 
+widths and the frequency downgrades to its proper indices later, if needed. Here is how I implemented the 
+decoding of binary data and all of the sample data. 
 
 ```python
 sampleData = struct.unpack('%dh' % dataSize, sampleData)
