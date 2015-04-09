@@ -22,11 +22,11 @@ so for now we do not have to keep track of the ```getnchannels()``` function, si
 mono.
 
 ```python
-import wave
-wave_file = wave.open(filename, 'r')
-dataSize = wave_file.getnframes()
-sampleRate = wave_file.getframerate()
-sampleWidth = wave_file.getsampwidth()
+import wave #import echonest.remix.audio as audio
+wave_file = wave.open(filename, 'r') #audio = audio.LocalAudioFile("song.wav")
+dataSize = wave_file.getnframes() #dataSize = audio.getsample
+sampleRate = wave_file.getframerate() #sampleRate = audio.sampleRate
+sampleWidth = wave_file.getsampwidth() 
 duration = dataSize / float(sampleRate)
 sampleData = wave_file.readframes(dataSize)
 wave_file.close()
