@@ -24,7 +24,7 @@ mono.
 ```python
 import wave #import echonest.remix.audio as audio
 wave_file = wave.open(filename, 'r') #audio = audio.LocalAudioFile("song.wav")
-dataSize = wave_file.getnframes() #for loop using -> dataSize += audio.getsample[i]
+dataSize = wave_file.getnframes() #for loop using -> dataSize = audio.getsample
 sampleRate = wave_file.getframerate() #sampleRate = audio.sampleRate
 sampleWidth = wave_file.getsampwidth()
 duration = dataSize / float(sampleRate) #duration = audio.duration
